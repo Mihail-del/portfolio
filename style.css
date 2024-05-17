@@ -1,0 +1,871 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: LaireSans;
+    src: url(fonts/LaireSans-Bold.otf);
+}
+
+@font-face {
+    font-family: Handvetica;
+    src: url(fonts/handvetica-neue.regular.ttf);
+}
+
+@font-face {
+    font-family: HandveticaNum;
+    src: url(fonts/handvetica/HandVetica.ttf);
+}
+
+@font-face {
+    font-family: Boxtoon;
+    src: url(fonts/Boxtoon-Regular.ttf);
+}
+
+@font-face {
+    font-family: Unutterable;
+    src: url(fonts/Unutterable-Regular.ttf);
+}
+
+@font-face {
+    font-family: Novem;
+    src: url(fonts/Novem.ttf);
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #FECC16 #2D2C2D;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #2D2C2D;
+    border: 3px dotted #2D2C2D;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #2D2C2D;
+    background-size: cover;
+    padding: 0;
+    font-family: HandveticaNum, Handvetica, sans-serif;
+    margin: 60px 0 0 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth
+}
+
+/*------------------------Mobile S------------------------*/
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #FECC16;
+    display: flex;
+    justify-content: end;
+    z-index: 100;
+    font-weight: 500;
+}
+
+#link-General{
+    font-family: Handvetica;
+    font-size: 28px;
+}
+
+#link-Web{
+    font-family: Boxtoon;
+    font-size: 26px;
+}
+
+#link-Python{
+    font-family: Unutterable;
+    font-size: 26px;
+}
+
+#link-3Dmodeling{
+    font-family: Novem;
+    font-size: 28px;
+}
+
+#link-Photographing{
+    font-family: LaireSans;
+    font-size: 26px;
+}
+
+.header-logo{
+    height: 100%;
+    margin: 0px -7px 0px 0px;
+    padding: 0px;
+    border-radius: 0px;
+    filter: drop-shadow(0px 0px 10px #2d2c2d) brightness(2);
+}
+
+.dropdown-header-menu{
+    text-align: right;
+}
+
+.dropdown-header-menu-btn{
+    height: 30px;
+    margin: 15px 15px 15px 0px;
+}
+
+.dropdown-header-menu:hover .dropdown-header-menu-child{
+    display: flex;
+}
+
+.dropdown-header-menu-child{
+    display: none;
+    text-align: left;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0px;
+    background: #FECC16;
+}
+
+.dropdown-header-menu-child a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px 0px;
+}
+
+.inline-header-menu{
+    display: none;
+}
+
+
+
+.General{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.General h1{
+    width: 100%;
+    font-family: Handvetica, sans-serif;
+    font-size: 36px;
+    color: #FECC16;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.General-photo-section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    width: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    overflow: hidden;
+    background-image: url(data/mypf.png);
+    background-size: cover;
+    box-shadow: inset #2D2C2D 0px -10px 100px 40px;
+}
+
+.General-photo-section a{
+    margin: 10px;
+    width: 10%;
+    z-index: 1;
+    background: #2D2C2D;
+    border-radius: 20%;
+    padding: 4px;
+    transition: 0.3s;
+    box-shadow: rgba(255, 255, 255, .4) 0px 8px 8px -5px;
+}
+
+.General-photo-section a img{
+    width: 100%;
+}
+
+.General-photo-section a:hover {
+    box-shadow: #FECC16 0px 0px 10px 3px;
+    transform: translate3d(0, -2px, 0);
+    
+}
+
+.General-photo-section a:focus {
+    box-shadow: rgba(0, 0, 0, .8) 2px 8px 4px -6px;
+}
+
+.General_text{
+    position: relative;
+    width: 90%;
+    font-size: 21px;
+    color: #fff;}
+
+.General-robot{
+    border-radius: 0;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 20%;
+    filter: drop-shadow(0px 0px 10px #FECC16);
+    z-index: 2;
+}
+
+
+
+
+.Web{
+    position: relative;
+    padding-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: right;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Web-h2-mobile{
+    font-family: Boxtoon, sans-serif;
+    width: 100%;
+    font-size: 36px;
+    color: #FECC16;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.Web h1{
+    display: none;
+    font-family: Boxtoon, sans-serif;
+    width: 100%;
+    font-size: 36px;
+    color: #FECC16;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.Web-photo-section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    width: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    overflow: hidden;
+    background-image: url(data/web.png);
+    background-size: cover;
+    box-shadow: inset #2D2C2D 0px -10px 100px 40px;
+}
+
+.Web-photo-section a{
+    margin: 20px;
+    z-index: 1;
+    padding: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    background: #2D2C2D;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: rgba(255, 255, 255, .4) 0px 8px 8px -5px;
+}
+
+.Web-photo-section a img{
+    width: 100%;
+}
+
+.Web-photo-section a:hover {
+    box-shadow: #FECC16 0px 0px 10px 3px;
+    transform: translate3d(0, -2px, 0);
+}
+
+.Web-photo-section a:focus {
+    box-shadow: rgba(0, 0, 0, .8) 2px 8px 4px -6px;
+}
+
+.Web_text{
+    position: relative;
+    width: 90%;
+    font-size: 21px;
+    color: #fff;
+    z-index: 3;
+    text-shadow: #2d2c2d 0px 0px 10px 10px;
+}
+
+.Web-robot{
+    border-radius: 0;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 20%;
+    filter: drop-shadow(0px 0px 5px #FECC16);
+    z-index: 2;
+}
+
+
+
+
+
+.Python{
+    position: relative;
+    padding-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Python h1{
+    font-family: Unutterable, sans-serif;
+    width: 100%;
+    font-size: 36px;
+    color: #FECC16;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.Python-photo-section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    width: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    overflow: hidden;
+    background-image: url(data/python.png);
+    background-size: cover;
+    box-shadow: inset #2D2C2D 0px -10px 100px 20px;
+}
+
+.Python-photo-section a{
+    margin: 20px;
+    z-index: 1;
+    padding: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    background: #2D2C2D;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: rgba(255, 255, 255, .4) 0px 8px 8px -5px;
+}
+
+.Python-photo-section a img{
+    width: 100%;
+}
+
+.Python-photo-section a:hover {
+    box-shadow: #FECC16 0px 0px 10px 3px;
+    transform: translate3d(0, -2px, 0);
+}
+
+.Python-photo-section a:focus {
+    box-shadow: rgba(0, 0, 0, .8) 2px 8px 4px -6px;
+}
+
+.Python_text{
+    position: relative;
+    width: 90%;
+    font-size: 21px;
+    color: #fff;}
+
+.Python-robot{
+    border-radius: 0;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 20%;
+    filter: drop-shadow(0px 0px 10px #FECC16);
+    z-index: 2;
+}
+
+
+
+
+.Blender{
+    position: relative;
+    padding-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: right;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Blender h1{
+    font-family: Novem, sans-serif;
+    display: none;
+    width: 100%;
+    font-size: 36px;
+    color: #FECC16;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.Blender-h2-mobile{
+    font-family: Boxtoon, sans-serif;
+    width: 100%;
+    font-size: 36px;
+    color: #FECC16;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.Blender-photo-section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    width: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    overflow: hidden;
+    background-image: url(data/blender.png);
+    background-size: cover;
+    box-shadow: inset #2D2C2D 0px -10px 100px 40px;
+}
+
+.Blender-photo-section a{
+    margin: 20px;
+    z-index: 1;
+    padding: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    background: #2D2C2D;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: rgba(255, 255, 255, .4) 0px 8px 8px -5px;
+}
+
+.Blender-photo-section a img{
+    width: 100%;
+}
+
+.Blender-photo-section a:hover {
+    box-shadow: #FECC16 0px 0px 10px 3px;
+    transform: translate3d(0, -2px, 0);
+}
+
+.Blender-photo-section a:focus {
+    box-shadow: rgba(0, 0, 0, .8) 2px 8px 4px -6px;
+}
+
+.Blender_text{
+    position: relative;
+    width: 90%;
+    font-size: 21px;
+    color: #fff;}
+
+.Blender-robot{
+    border-radius: 0;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 20%;
+    filter: drop-shadow(0px 0px 5px #FECC16);
+    z-index: 2;
+}
+
+
+
+
+.Photographing{
+    position: relative;
+    padding-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Photographing h1{
+    font-family: LaireSans, sans-serif;
+    width: 100%;
+    font-size: 36px;
+    color: #FECC16;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.Photographing-photo-section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    width: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    overflow: hidden;
+    background-image: url(data/photographing.png);
+    background-size: cover;
+    box-shadow: inset #2D2C2D 0px -10px 100px 40px;
+}
+
+.Photographing-photo-section a{
+    margin: 20px;
+    z-index: 1;
+    padding: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    background: #2D2C2D;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: rgba(255, 255, 255, .4) 0px 8px 8px -5px;
+}
+
+.Photographing-photo-section a img{
+    width: 100%;
+}
+
+.Photographing-photo-section a:hover {
+    box-shadow: #FECC16 0px 0px 10px 3px;
+    transform: translate3d(0, -2px, 0);
+}
+
+.Photographing-photo-section a:focus {
+    box-shadow: rgba(0, 0, 0, .8) 2px 8px 4px -6px;
+}
+
+.Photographing_text{
+    position: relative;
+    width: 90%;
+    font-size: 21px;
+    color: #fff;}
+
+.Photographing-robot{
+    border-radius: 0;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 20%;
+    filter: drop-shadow(0px 0px 10px #FECC16);
+    z-index: 2;
+}
+
+hr{
+    margin-top: 50px;
+    background: #FECC16;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 5%;
+}
+
+.footer-text{
+    padding-right: 20px;
+}
+
+footer img{
+    width: 150px;
+    filter: brightness(0.7);
+}
+
+
+
+/*------------------------Mobile L------------------------*/
+@media(min-width: 425px){
+
+.General-photo-section{
+    width: 400px;
+}
+
+
+.Web-photo-section{
+    width: 400px;
+}
+
+
+.Python-photo-section{
+    width: 400px;
+}
+
+
+.Blender-photo-section{
+    width: 400px;
+}
+
+
+.Photographing-photo-section{
+    width: 400px;
+}
+
+
+}
+
+
+/*------------------------Tablet------------------------*/
+@media(min-width: 768px){
+
+
+
+}
+
+
+/*------------------------Laptop S------------------------*/
+@media(min-width: 1024px){
+
+header{
+    position: relative;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    z-index: 100;
+}
+
+.header-logo{
+    margin: 0px -2px 0px 0px;
+}
+
+.dropdown-header-menu{
+    display: none;
+}
+
+.inline-header-menu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-frame{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-left: #2D2C2D 2px solid;
+}
+
+.inline-header-menu a{
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+}
+
+.inline-header-menu a {
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: 0px 20px 0px 0px;
+    padding: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.inline-header-menu a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.inline-header-menu a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+#link-General{
+    background: url("data/paperbg5.jpg");
+    background-size: cover;
+    transform: rotate(2deg);
+}
+
+#link-Web{
+    background: url("data/paperbg2.jpg");
+    background-size: cover;
+    transform: rotate(-2deg);
+}
+
+#link-Python{
+    background: url("data/paperbg2.jpg");
+    background-size: cover;
+    transform: rotate(-3deg);
+}
+
+#link-3Dmodeling{
+    background: url("data/paperbg2.jpg");
+    background-size: cover;
+}
+
+#link-Photographing{
+    background: url("data/paperbg2.jpg");
+    background-size: cover;
+    transform: rotate(4deg);
+}
+
+
+
+.General{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.General h1{
+    font-size: 56px;
+}
+
+.General-photo-section{
+    width: 30%;
+}
+
+.General_text{
+    font-size: 32px;
+    width: 50%;
+    padding-right: 10%;
+}
+
+.General-robot{
+    width: 20%;
+}
+
+
+.Web{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Web h1{
+    display: inline;
+    font-size: 56px;
+}
+
+.Web-h2-mobile{
+    display: none;
+}
+
+.Web-photo-section{
+    width: 30%;
+}
+
+.Web_text{
+    font-size: 32px;
+    text-align: right;
+    width: 50%;
+    padding-left: 10%;
+}
+
+.Web-robot{
+    width: 20%;
+}
+
+
+
+.Python{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Python h1{
+    font-size: 56px;
+}
+
+.Python-photo-section{
+    width: 30%;
+}
+
+.Python_text{
+    font-size: 32px;
+    width: 50%;
+    padding-right: 10%;
+}
+
+.Python-robot{
+    width: 20%;
+}
+
+
+
+.Blender{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Blender h1{
+    display: inline;
+    font-size: 56px;
+}
+
+.Blender-h2-mobile{
+    display: none;
+}
+
+.Blender-photo-section{
+    width: 30%;
+}
+
+.Blender_text{
+    font-size: 32px;
+    text-align: right;
+    width: 50%;
+    padding-left: 10%;
+}
+
+.Blender-robot{
+    width: 15%;
+}
+
+
+.Photographing{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Photographing h1{
+    font-size: 56px;
+}
+
+.Photographing-photo-section{
+    width: 30%;
+}
+
+
+.Photographing_text{
+    font-size: 32px;
+    width: 50%;
+    padding-right: 10%;
+}
+
+.Photographing-robot{
+    width: 15%;
+}
+
+
+}
+
+
+/*------------------------Laptop------------------------*/
+@media(min-width: 1400px){
+
+}
