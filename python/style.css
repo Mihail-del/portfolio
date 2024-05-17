@@ -1,0 +1,413 @@
+@font-face {
+  font-family: Handvetica;
+  src: url(../fonts/handvetica-neue.regular.ttf);
+}
+
+@font-face {
+  font-family: HandveticaNum;
+  src: url(../fonts/handvetica/HandVetica.ttf);
+}
+
+@font-face {
+  font-family: Unutterable;
+  src: url(../fonts/Unutterable-Regular.ttf);
+}
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #FECC16 #2D2C2D;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #2D2C2D;
+    border: 3px dotted #2D2C2D;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #2D2C2D;
+    background-size: cover;
+    padding: 0;
+    font-family: HandveticaNum, Handvetica, sans-serif;
+    margin: 80px 0 0 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*------------------------Mobile S------------------------*/
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: #FECC16;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  font-weight: 500;
+}
+
+
+#back-btn{
+  position: relative;
+  height: 40px;
+  padding: 5px 20px;
+}
+
+.header-logo{
+  height: 100%;
+  margin: 0px -7px 0px 0px;
+  padding: 0px;
+  border-radius: 0px;
+  filter: drop-shadow(0px 0px 10px #2d2c2d) brightness(2);
+  transform: scaleX(-1) ;
+}
+
+#main-header{
+  background-image: url(../data/paperbg5.jpg);
+  background-size: cover;
+  font-family: Unutterable;
+  margin: 0px 0% 0px 5%;
+  padding: 5px 10px;
+  text-align: center;
+  color: #2D2C2D;
+  font-size: 18px;
+}
+
+
+.Editor{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.Editor h1{
+  width: 100%;
+  font-size: 56px;
+  color: #FECC16;
+  margin: 0px 0px 40px 0px;
+}
+
+.Editor img{
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: #555 0px 0px 20px 5px;
+}
+
+.Editor-text{
+  position: relative;
+  width: 80%;
+}
+
+.Editor p{
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.Editor a{
+  font-family: Unutterable;
+  background-image: url(../data/paperbg5.jpg);
+  background-size: cover;
+  color: #2D2C2D;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+#Editor-info{
+  font-size: 14px;
+}
+
+.Editor a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #FECC16;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.Editor a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+
+
+.Assistant{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.Assistant h1{
+  width: 100%;
+  font-size: 56px;
+  color: #FECC16;
+  margin: 20vh 0px 40px 0px;
+}
+
+.Assistant img{
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: #555 0px 0px 20px 5px;
+
+}
+
+.Assistant-text{
+  position: relative;
+  width: 80%;
+}
+
+.Assistant p{
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.Assistant a{
+  font-family: Unutterable;
+  background-image: url(../data/paperbg5.jpg);
+  background-size: cover;
+  color: #2D2C2D;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.Assistant a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #FECC16;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.Assistant a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+
+
+
+.Photo{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.Photo h1{
+  width: 100%;
+  font-size: 56px;
+  color: #FECC16;
+  margin: 20vh 0px 40px 0px;
+}
+
+.Photo img{
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: #555 0px 0px 20px 5px;
+}
+
+.Photo-text{
+  position: relative;
+  width: 80%;
+}
+
+.Photo p{
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.Photo a{
+  font-family: Unutterable;
+  background-image: url(../data/paperbg5.jpg);
+  background-size: cover;
+  color: #2D2C2D;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.Photo a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #FECC16;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.Photo a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+
+
+hr{
+  margin-top: 50px;
+  background: #FECC16;
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 5%;
+}
+
+.footer-text{
+  padding-right: 20px;
+}
+
+footer img{
+  width: 150px;
+}
+
+
+/*------------------------Mobile L------------------------*/
+@media(min-width: 425px){
+
+#main-header{
+  font-size: 24px;
+}
+
+}
+
+
+/*------------------------Tablet------------------------*/
+@media(min-width: 768px){
+
+
+
+}
+
+
+/*------------------------Laptop S------------------------*/
+@media(min-width: 1024px){
+
+.Editor{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Editor img{
+  width: 45%;
+}
+
+.Editor-text{
+  width: 45%;
+}
+
+
+
+.Assistant{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Assistant img{
+  width: 45%;
+}
+
+.Assistant-text{
+  width: 45%;
+}
+
+
+
+.Photo{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Photo img{
+  width: 45%;
+}
+
+.Photo-text{
+  width: 45%;
+}
+
+#Photo-info{
+  font-size: 14px;
+}
+
+}
+
+
+/*------------------------Laptop------------------------*/
+@media(min-width: 1400px){
+
+}
