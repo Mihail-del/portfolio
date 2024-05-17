@@ -1,0 +1,515 @@
+@font-face {
+  font-family: Handvetica;
+  src: url(../fonts/handvetica-neue.regular.ttf);
+}
+
+@font-face {
+  font-family: HandveticaNum;
+  src: url(../fonts/handvetica/HandVetica.ttf);
+}
+
+@font-face {
+  font-family: Novem;
+  src: url(../fonts/Novem.ttf);
+}
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #FECC16 #2D2C2D;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #2D2C2D;
+    border: 3px dotted #2D2C2D;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #2D2C2D;
+    background-size: cover;
+    padding: 0;
+    font-family: HandveticaNum, Handvetica, sans-serif;
+    margin: 80px 0 0 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*------------------------Mobile S------------------------*/
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: #FECC16;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  font-weight: 500;
+}
+
+
+#back-btn{
+  position: relative;
+  height: 40px;
+  padding: 5px 20px;
+}
+
+.header-logo{
+  height: 100%;
+  margin: 0px -7px 0px 0px;
+  padding: 0px;
+  border-radius: 0px;
+  filter: drop-shadow(0px 0px 10px #2d2c2d) brightness(2);
+  transform: scaleX(-1) ;
+}
+
+#main-header{
+  background-image: url(../data/paperbg5.jpg);
+  background-size: cover;
+  font-family: Novem;
+  margin: 0px 0% 0px 5%;
+  padding: 5px 10px;
+  text-align: center;
+  color: #2D2C2D;
+  font-size: 18px;
+}
+
+
+.Video{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.Audi-R8{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.Nissan{
+  margin-top: 10vh;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.Video h1{
+  width: 100%;
+  font-size: 56px;
+  color: #FECC16;
+  margin: 0px 0px 40px 0px;
+}
+
+.Video h2{
+  color: #fff;
+  font-size: 36px;
+}
+
+.main-video{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-video video{
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: #555 0px 0px 20px 5px;
+}
+
+.solid-previews{
+  margin-top: 20px;
+  background: #555;
+  border-radius: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-shadow: #555 0px 0px 20px 5px;
+}
+
+.solid-previews h2{
+  width: 100%;
+}
+
+.solid-previews video{
+  width: 90%;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+
+
+
+
+.Renders{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.Renders h1{
+  width: 100%;
+  font-size: 56px;
+  color: #FECC16;
+  margin: 20vh 0px 40px 0px;
+}
+
+.Renders img, video{
+  width: 80%;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: #555 0px 0px 20px 5px;
+}
+
+
+
+
+.Models{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.Models h1{
+  width: 100%;
+  font-size: 56px;
+  color: #FECC16;
+  margin: 20vh 0px 40px 0px;
+}
+
+.photo-section-audi{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  width: 80%;
+  margin: 20px 0px;
+  aspect-ratio: 16/9;
+  border-radius: 20px;
+  overflow: hidden;
+  background-image: url(data/audi.png);
+  background-size: cover;
+  box-shadow: inset #2D2C2D 0px -10px 100px 40px;
+  box-shadow: #555 0px 0px 20px 5px;
+}
+
+.photo-section-audi a{
+  font-family: Boxtoon;
+  background-image: url(../data/paperbg5.jpg);
+  background-size: cover;
+  color: #2D2C2D;
+  text-decoration: none;
+  padding: 10px;
+  margin: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  box-shadow: #333 0px 10px 30px 3px;
+}
+
+.photo-section-audi a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #2D2C2D;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.photo-section-audi a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+
+
+.photo-section-mask{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  width: 80%;
+  margin: 20px 0px;
+  aspect-ratio: 16/9;
+  border-radius: 20px;
+  overflow: hidden;
+  background-image: url(data/mask.png);
+  background-size: cover;
+  box-shadow: inset #2D2C2D 0px -10px 100px 40px;
+  box-shadow: #555 0px 0px 20px 5px;
+}
+
+.photo-section-mask a{
+  font-family: Boxtoon;
+  background-image: url(../data/paperbg5.jpg);
+  background-size: cover;
+  color: #2D2C2D;
+  text-decoration: none;
+  padding: 10px;
+  margin: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  box-shadow: #333 0px 10px 30px 3px;
+}
+
+.photo-section-mask a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #2D2C2D;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.photo-section-mask a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.photo-section-ship{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  width: 80%;
+  margin: 20px 0px;
+  aspect-ratio: 16/9;
+  border-radius: 20px;
+  overflow: hidden;
+  background-image: url(data/ship.png);
+  background-size: cover;
+  box-shadow: inset #2D2C2D 0px -10px 100px 40px;
+  box-shadow: #555 0px 0px 20px 5px;
+}
+
+.photo-section-ship a{
+  font-family: Boxtoon;
+  background-image: url(../data/paperbg5.jpg);
+  background-size: cover;
+  color: #2D2C2D;
+  text-decoration: none;
+  padding: 10px;
+  margin: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  box-shadow: #333 0px 10px 30px 3px;
+}
+
+.photo-section-ship a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #2D2C2D;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.photo-section-ship a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+
+
+
+
+
+
+
+hr{
+  margin-top: 50px;
+  background: #FECC16;
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 5%;
+}
+
+.footer-text{
+  padding-right: 20px;
+}
+
+footer img{
+  width: 150px;
+}
+
+
+/*------------------------Mobile L------------------------*/
+@media(min-width: 425px){
+
+#main-header{
+  font-size: 24px;
+}
+
+}
+
+
+/*------------------------Tablet------------------------*/
+@media(min-width: 768px){
+
+.Renders img, video{
+  width: 40%;
+}
+
+
+
+.photo-section{
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.photo-section a{
+  font-size: 24px;
+}
+
+}
+
+
+/*------------------------Laptop S------------------------*/
+@media(min-width: 1024px){
+
+.Video{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.Audi-R8{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.Nissan{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.Video h1{
+  width: 100%;
+  font-size: 72px;
+}
+
+.Video h2{
+  font-size: 56px;
+}
+
+.main-video{
+  width: 80%;
+}
+
+.solid-previews{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.solid-previews video{
+  width: 30%;
+}
+
+
+
+.Renders{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+.Models{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+}
+
+
+/*------------------------Laptop------------------------*/
+@media(min-width: 1400px){
+
+}
